@@ -1,7 +1,6 @@
+# systemu gem
 class rubygems::systemu {
-  require rubygems
-  package{'systemu':
+  package{'rubygem-systemu':
     ensure => present,
-    provider => gem,
   }
 }
