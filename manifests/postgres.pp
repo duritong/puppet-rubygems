@@ -5,7 +5,7 @@ class rubygems::postgres {
       ensure => installed,
     }
   } else {
-    require postgres::devel
+    ensure_packages(['postgresql-devel'])
     rubygems::gem{'ruby-pg':}
   }
 }
